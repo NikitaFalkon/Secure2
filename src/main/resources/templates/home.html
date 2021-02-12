@@ -5,6 +5,10 @@
     <title>Hello World!</title>
 </head>
 <body>
+<div th:if="${param.error}">
+    Invalid user
+</div>
 <h1 th:inline="text">Hello [[${#httpServletRequest.remoteUser}]]!</h1>
+<a th:href="@{/animals}">Animals</a>
 </body>
 </html>

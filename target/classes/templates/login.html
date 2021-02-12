@@ -8,9 +8,6 @@
 <div th:if="${param.error}">
     Invalid user
 </div>
-<div th:if="${param.logout}">
-    Logout
-</div>
 <form th:action="@{/login}" method="post">
     <div><label>User Name : <input type="text" name="username"/></label></div>
     <div><label>Password: <input type="text" name="password"></label></div>
